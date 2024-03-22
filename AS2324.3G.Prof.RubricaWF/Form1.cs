@@ -26,7 +26,14 @@ namespace AS2324._3G.Prof.RubricaWF
 
         private void btnAggiungi_Click(object sender, EventArgs e)
         {
-
+            cognome[nRecordInseriti] = txtCognome.Text;
+            nome[nRecordInseriti] = txtNome.Text;
+            email[nRecordInseriti] = txtEmail.Text;
+            simpatia[nRecordInseriti] = cmbSimpatia.SelectedIndex;
+            annoNascita[nRecordInseriti] = Convert.ToInt32(txtAnnoNascita.Text);
+            nickname[nRecordInseriti] = txtNickName.Text;
+            nRecordInseriti++;
+            lblNRecord.Text = "N. record inseriti: " + nRecordInseriti;
         }
     }
 }
