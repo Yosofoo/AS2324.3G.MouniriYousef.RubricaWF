@@ -20,10 +20,6 @@ namespace AS2324._3G.Prof.RubricaWF
 
         private void btnRicerca_Click(object sender, EventArgs e)
         {
-            if (cmbRicerca.Text == "")
-            {
-                MessageBox.Show("E' necessario definire il campo di ricerca.");
-            }
             if (txtRicerca.Text == "")
             {
                 MessageBox.Show("E' necessario definire il campo di ricerca.");
@@ -38,7 +34,7 @@ namespace AS2324._3G.Prof.RubricaWF
                         {
                             if (nome[i].ToUpper().StartsWith(txtRicerca.Text.ToUpper()) == true)
                             {
-                                lstElenco.Items.Add(nome[i]);
+                                lstElenco.Items.Add($"{nome[i]} {cognome[i]} ({email[i]}) - Simpatia: {simpatia[i]} - Anno di nascita: {annoNascita[i]} - Nickname: {nickname[i]}");
                             }
                         }
                     }
@@ -48,7 +44,7 @@ namespace AS2324._3G.Prof.RubricaWF
                         {
                             if (nome[i].ToUpper().EndsWith(txtRicerca.Text.ToUpper()) == true)
                             {
-                                lstElenco.Items.Add(nome[i]);
+                                lstElenco.Items.Add($"{nome[i]} {cognome[i]} ({email[i]}) - Simpatia: {simpatia[i]} - Anno di nascita: {annoNascita[i]} - Nickname: {nickname[i]}");
                             }
                         }
                     }
@@ -58,7 +54,7 @@ namespace AS2324._3G.Prof.RubricaWF
                         {
                             if (nome[i].ToUpper().Contains(txtRicerca.Text.ToUpper()) == true)
                             {
-                                lstElenco.Items.Add(nome[i]);
+                                lstElenco.Items.Add($"{nome[i]} {cognome[i]} ({email[i]}) - Simpatia: {simpatia[i]} - Anno di nascita: {annoNascita[i]} - Nickname: {nickname[i]}");
                             }
                         }
                     }
@@ -72,7 +68,7 @@ namespace AS2324._3G.Prof.RubricaWF
                         {
                             if (cognome[i].ToUpper().StartsWith(txtRicerca.Text.ToUpper()) == true)
                             {
-                                lstElenco.Items.Add(cognome[i]);
+                                lstElenco.Items.Add($"{nome[i]} {cognome[i]} ({email[i]}) - Simpatia: {simpatia[i]} - Anno di nascita: {annoNascita[i]} - Nickname: {nickname[i]}");
                             }
                         }
                     }
@@ -82,7 +78,7 @@ namespace AS2324._3G.Prof.RubricaWF
                         {
                             if (cognome[i].ToUpper().EndsWith(txtRicerca.Text.ToUpper()) == true)
                             {
-                                lstElenco.Items.Add(cognome[i]);
+                                lstElenco.Items.Add($"{nome[i]} {cognome[i]} ({email[i]}) - Simpatia: {simpatia[i]} - Anno di nascita: {annoNascita[i]} - Nickname: {nickname[i]}");
                             }
                         }
                     }
@@ -92,7 +88,7 @@ namespace AS2324._3G.Prof.RubricaWF
                         {
                             if (cognome[i].ToUpper().Contains(txtRicerca.Text.ToUpper()) == true)
                             {
-                                lstElenco.Items.Add(cognome[i]);
+                                lstElenco.Items.Add($"{nome[i]} {cognome[i]} ({email[i]}) - Simpatia: {simpatia[i]} - Anno di nascita: {annoNascita[i]} - Nickname: {nickname[i]}");
                             }
                         }
                     }
@@ -106,7 +102,7 @@ namespace AS2324._3G.Prof.RubricaWF
                         {
                             if (nickname[i].ToUpper().StartsWith(txtRicerca.Text.ToUpper()) == true)
                             {
-                                lstElenco.Items.Add(nickname[i]);
+                                lstElenco.Items.Add($"{nome[i]} {cognome[i]} ({email[i]}) - Simpatia: {simpatia[i]} - Anno di nascita: {annoNascita[i]} - Nickname: {nickname[i]}");
                             }
                         }
                     }
@@ -116,7 +112,7 @@ namespace AS2324._3G.Prof.RubricaWF
                         {
                             if (nickname[i].ToUpper().EndsWith(txtRicerca.Text.ToUpper()) == true)
                             {
-                                lstElenco.Items.Add(nickname[i]);
+                                lstElenco.Items.Add($"{nome[i]} {cognome[i]} ({email[i]}) - Simpatia: {simpatia[i]} - Anno di nascita: {annoNascita[i]} - Nickname: {nickname[i]}");
                             }
                         }
                     }
@@ -126,7 +122,7 @@ namespace AS2324._3G.Prof.RubricaWF
                         {
                             if (nickname[i].ToUpper().Contains(txtRicerca.Text.ToUpper()) == true)
                             {
-                                lstElenco.Items.Add(nickname[i]);
+                                lstElenco.Items.Add($"{nome[i]} {cognome[i]} ({email[i]}) - Simpatia: {simpatia[i]} - Anno di nascita: {annoNascita[i]} - Nickname: {nickname[i]}");
                             }
                         }
                     }
