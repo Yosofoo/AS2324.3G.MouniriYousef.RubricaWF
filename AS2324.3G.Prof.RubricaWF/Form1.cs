@@ -66,11 +66,70 @@ namespace AS2324._3G.Prof.RubricaWF
                 }
                 if (cmbRicerca.Text == "Cognome")
                 {
+                    if (cmbOpzioni.Text == "Inizia per")
+                    {
+                        for (int i = 0; i < nRecordInseriti; i++)
+                        {
+                            if (cognome[i].ToUpper().StartsWith(txtRicerca.Text.ToUpper()) == true)
+                            {
+                                lstElenco.Items.Add(cognome[i]);
+                            }
+                        }
+                    }
+                    if (cmbOpzioni.Text == "Finisce per")
+                    {
+                        for (int i = 0; i < nRecordInseriti; i++)
+                        {
+                            if (cognome[i].ToUpper().EndsWith(txtRicerca.Text.ToUpper()) == true)
+                            {
+                                lstElenco.Items.Add(cognome[i]);
+                            }
+                        }
+                    }
+                    if (cmbOpzioni.Text == "Contiene")
+                    {
+                        for (int i = 0; i < nRecordInseriti; i++)
+                        {
+                            if (cognome[i].ToUpper().Contains(txtRicerca.Text.ToUpper()) == true)
+                            {
+                                lstElenco.Items.Add(cognome[i]);
+                            }
+                        }
+                    }
 
                 }
                 if (cmbRicerca.Text == "NickName")
                 {
-
+                    if (cmbOpzioni.Text == "Inizia per")
+                    {
+                        for (int i = 0; i < nRecordInseriti; i++)
+                        {
+                            if (nickname[i].ToUpper().StartsWith(txtRicerca.Text.ToUpper()) == true)
+                            {
+                                lstElenco.Items.Add(nickname[i]);
+                            }
+                        }
+                    }
+                    if (cmbOpzioni.Text == "Finisce per")
+                    {
+                        for (int i = 0; i < nRecordInseriti; i++)
+                        {
+                            if (nickname[i].ToUpper().EndsWith(txtRicerca.Text.ToUpper()) == true)
+                            {
+                                lstElenco.Items.Add(nickname[i]);
+                            }
+                        }
+                    }
+                    if (cmbOpzioni.Text == "Contiene")
+                    {
+                        for (int i = 0; i < nRecordInseriti; i++)
+                        {
+                            if (nickname[i].ToUpper().Contains(txtRicerca.Text.ToUpper()) == true)
+                            {
+                                lstElenco.Items.Add(nickname[i]);
+                            }
+                        }
+                    }
                 }
             }
         }
