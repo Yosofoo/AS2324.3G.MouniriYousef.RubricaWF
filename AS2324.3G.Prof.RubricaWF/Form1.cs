@@ -21,7 +21,28 @@ namespace AS2324._3G.Prof.RubricaWF
         private void btnRicerca_Click(object sender, EventArgs e)
         {
             if (cmbRicerca.Text == "")
+            {
                 MessageBox.Show("E' necessario definire il campo di ricerca.");
+            }
+            if (txtRicerca.Text == "")
+            {
+                MessageBox.Show("E' necessario definire il campo di ricerca.");
+            }
+            else
+            {
+                if (cmbRicerca.Text == "Nome")
+                {
+
+                }
+                if (cmbRicerca.Text == "Cognome")
+                {
+
+                }
+                if (cmbRicerca.Text == "NickName")
+                {
+
+                }
+            }
         }
 
         private void btnAggiungi_Click(object sender, EventArgs e)
@@ -45,5 +66,6 @@ namespace AS2324._3G.Prof.RubricaWF
                 lstElenco.Items.Add($"{nome[i]} {cognome[i]} ({email[i]}) - Simpatia: {simpatia[i]} - Anno di nascita: {annoNascita[i]} - Nickname: {nickname[i]}");
             }
         }
+
     }
 }
