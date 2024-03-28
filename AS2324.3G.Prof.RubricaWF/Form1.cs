@@ -32,6 +32,36 @@ namespace AS2324._3G.Prof.RubricaWF
             {
                 if (cmbRicerca.Text == "Nome")
                 {
+                    if (cmbOpzioni.Text == "Inizia per")
+                    {
+                        for (int i = 0; i < nRecordInseriti; i++)
+                        {
+                            if (nome[i].ToUpper().StartsWith(txtRicerca.Text.ToUpper()) == true)
+                            {
+                                lstElenco.Items.Add(nome[i]);
+                            }
+                        }
+                    }
+                    if (cmbOpzioni.Text == "Finisce per")
+                    {
+                        for (int i = 0; i < nRecordInseriti; i++)
+                        {
+                            if (nome[i].ToUpper().EndsWith(txtRicerca.Text.ToUpper()) == true)
+                            {
+                                lstElenco.Items.Add(nome[i]);
+                            }
+                        }
+                    }
+                    if (cmbOpzioni.Text == "Contiene")
+                    {
+                        for (int i = 0; i < nRecordInseriti; i++)
+                        {
+                            if (nome[i].ToUpper().Contains(txtRicerca.Text.ToUpper()) == true)
+                            {
+                                lstElenco.Items.Add(nome[i]);
+                            }
+                        }
+                    }
 
                 }
                 if (cmbRicerca.Text == "Cognome")
