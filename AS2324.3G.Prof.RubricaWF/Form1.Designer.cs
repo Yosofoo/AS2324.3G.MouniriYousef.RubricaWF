@@ -256,6 +256,7 @@
             btnElenca.TabIndex = 2;
             btnElenca.Text = "Elenca";
             btnElenca.UseVisualStyleBackColor = true;
+            btnElenca.Click += btnElenca_Click;
             // 
             // label7
             // 

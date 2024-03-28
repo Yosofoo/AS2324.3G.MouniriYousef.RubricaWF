@@ -35,5 +35,15 @@ namespace AS2324._3G.Prof.RubricaWF
             nRecordInseriti++;
             lblNRecord.Text = "N. record inseriti: " + nRecordInseriti;
         }
+
+        private void btnElenca_Click(object sender, EventArgs e)
+        {
+            lstElenco.Items.Clear();
+
+            for (int i = 0; i < nRecordInseriti; i++)
+            {
+                lstElenco.Items.Add($"{nome[i]} {cognome[i]} ({email[i]}) - Simpatia: {simpatia[i]} - Anno di nascita: {annoNascita[i]} - Nickname: {nickname[i]}");
+            }
+        }
     }
 }
